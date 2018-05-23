@@ -1,22 +1,15 @@
 {
-  "name": "hello-koa2",
+  "name": "test-api",
   "version": "1.0.0",
-  "description": "Hello Koa 2 example with async",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node app.js"
+    "dev":"nodemon index.js",
+    "start":"pm2 start index.js"
   },
-  "keywords": [
-    "koa",
-    "async"
-  ],
-  "author": "Michael Liao",
-  "license": "Apache-2.0",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/michaelliao/learn-javascript.git"
-  },
+  "repository": "git@github.com:Crossl/test-api.git",
+  "author": "cross <a278886971@gmail.com>",
+  "license": "MIT",
   "dependencies": {
-    "koa": "2.0.0"
+    "koa": "^2.5.1"
   }
 }
